@@ -1,0 +1,157 @@
+RestFul API <- Backend developement <- Web Applications -|-Dynamic-complex
+---------------------------------------------------------|
+|
+|
+Websites - Static - Read only - simple
+|
+|
+KISS - Keep it simple silly
+|
+|
+|
+--------------------------|
+                       Web apps
+--------------------------|
+|
+|
+Three layers---
+
+Front-End 			Back-End					Data Storage
+HTML				Brain of the System			MySQL
+CSS				Node						MongoDB
+JAVASCRIPT			spring					Oracle
+REACT etc			python
+
+
+Full-Stack Developers
+
+
+Restaurants-
+
+Dining Area			Kitchen/Chef		Raw Materials/food storage
+Front-End			Back-End			Database
+
+
+APIs-
+interaction between two or more systems
+
+SOAP[XML]- Simple Object Access Protocol - top of past - 010101010101-
+it was slow [90% metadata, so file becomes heavy]
+
+so we move on-
+REST[JSON]- {} - no metadata, lightweight, fast, flexible, XML, etc etc.
+|
+|- Representational State Transfer - why? - 
+|- Resources-data-CRUD
+|-127.0.0.1:9090/mba/movies/dhoni - URI/Absolute path-
+|-ip:port/application/resource/
+
+e.g. Vehicle Management System
+121.0.0.9:8080/VMS/Vehicle/1234 - URI
+
+UBER-
+111.24.56.69:7777/geolocator/locations/1234 - URI
+
+Actions- CRUD
+
+REST is build on HTTP[POST/GET/PUT/DELETE]
+
+BookMyShow
+create a REST API endpoint to create movies-
+CREATE   -   POST  URI - 121.0.4.9:8080/BMS/movies
+both together becomes RestFul API
+-POST 121.0.4.9:8080/BMS/movies
+
+Search a movie with name
+read - GET	URI - 121.0.4.9:8080/BMS/movies/dhoom
+
+Update a movie with name Ranjhana
+update - PUT URI - 121.0.4.9:8080/BMS/movies/Ranjhana
+
+Delete - DELETE URI - 121.0.4.9:8080/BMS/movies/Ranjhana
+
+http verbs - URI
+post/get/put/delete
+
+e.g. 
+VMS-
+POST 121.0.4.9:8080/VMS/vehicle/
+
+API DEVELOPEMENT
+
+env for humans- o2, h20 
+in computers- runtime env
+JS - Programming language, only browsers, Node.js - Runtime environment for JS
+
+Synchronous 		Asynchronous processing
+mai apna saman		mujhe darr nhi h, dusre kaam bhi hai
+lekar hi jaunga,		aap raseed dedijiye, kaam ho jaega to 
+chahe kitna bhi 		call krdijiyega, mai aajaunga lene.
+time lage, mai
+wait karunga		
+koi aur lekar na
+bhaag jaye.
+
+
+Selmon Bhoi - Async Processing
+song - Kabutar Jaa Jaa Jaa
+
+writes the letter, kabutar ko dediya, or apna naach gana krliya, khud dene nhi gyi.
+
+Rest APIs - Node.js | JS
+Frameworks - assures minimum quality|structure.[for indusrty]
+Express - framework
+
+Difference between library and framework
+Library is like borrowing sugar from neighbour for tea, set of reusable code.
+Framework ensures structure, boiler plate etc.
+
+Problem Statement - Ideas App - anyone can CRUD their ideas.
+we need to create RESTFul Endpoints
+
+name- IdeaApp
+
+1. create Idea - POST 127.0.0.1:8080/ideaapp/idea
+2. Search Idea - GET 127.0.0.1:8080/ideaapp/idea
+3. Update Idea - PUT 127.0.0.1:8080/ideaapp/idea
+
+create node project- initialized - npm init
+bring express - npm install express - {server [easy] - is a never stopping process.}
+mai mere code ka maza puri duniya ko dena chahta hoon, par hamesha kon execute krega, server.
+
+we need to start a server.
+
+Express supports middleware- 
+you are ill - hospital gye - doctor se milna
+par usse phle reception pe jana parta hai, fees dena parta hai, then blood test, bp chekcup etc etc, then doctor.
+yee sab beech ki chizon ko middleware bolte hai.
+validation, checkup etc 
+
+in programming, middleware is nothing but a function:-
+request object
+response object
+next
+
+e.g. 
+customer calls are request
+it gets back is response
+
+Backend-
+Routes - receptionist in the hotel - welcomes and check whether the user is valid or not.
+
+Conrtoller[logic] - waiter - after receptionist the waiter take cares of the customer. The service depends totally on waiter.
+
+Model - Cook[food] only cook is allowed in the kitchen, similarly, only the model should be allowed to access data.
+
+R-C-M
+M-C-R
+C-R-M
+
+restaurant wala example lelo bhai , samajh jaoge hehe.
+M-C-R is logically best.
+Model - Controller - Routes
+
+
+
+
+
